@@ -1,5 +1,5 @@
 // Get month number
-
+'use strict';
 const Months = ['jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'];
 const month = (nameOfMonth) => {
   for (let i = 0; i < Months.length; i++) {
