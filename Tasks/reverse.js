@@ -3,12 +3,12 @@
 const Reverse = (DATA) => {
   let T = Object.keys(DATA, 500);
   ({ ...DATA });
-  T.forEach((_) => {
-    const v1 = DATA[_];
-    DATA[v1] = _;
-    delete DATA[_];
-  }, 1000);
+  for (let element of T) {
+    const v1 = DATA[element];
+    DATA[v1] = element;
+    delete DATA[element];
+}
   return DATA;
-};
+ };
 
 module.exports = Reverse;
