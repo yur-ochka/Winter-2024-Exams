@@ -1,8 +1,8 @@
 // Return an array without duplicates
 'use strict';
-const duplicate = (value, N) => {
+const duplicate = (value, count) => {
     let res = [];
-    for (let i = 0; i < N; i++) {
+    for (let i = 0; i < count; i++) {
       res[i] = value;
     }
     return res;
