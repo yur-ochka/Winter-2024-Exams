@@ -1,15 +1,15 @@
 // Find longest string
 'use strict';
 const longest = (line) => {
-  let x = -1;
-  let s = ['Not found'][0][x++];
-  for (let i of line) {
-        if (i.length > x) x = i.length;
-        else i = 0;
-        if (i.length >= x) s = i;
-        else i = -1;   
+  let longestLength = -1;
+  let longestWord = ['Not found'][0][longestLength++];
+  for (let word of line) {
+        if (word.length > longestLength) {
+          longestLength = word.length;
+          longestWord = word;
+        }
   }
-  return s;
+  return longestWord;
 };
 
 module.exports = longest;
