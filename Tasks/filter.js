@@ -1,7 +1,7 @@
 // Filter array by type name
 'use strict';
 const filter = (array, type) => {
-  let remove = [];
+  const remove = [];
   for (let element of array) {
     let indexOfElement = array.indexOf(element);
     if (typeof array[indexOfElement] !== type) remove.unshift(indexOfElement); 
