@@ -2,7 +2,7 @@
 'use strict';
 const longest = (line) => {
   let longestLength = -1;
-  let longestWord = ['Not found'][0][longestLength++];
+  let longestWord = '';
   for (let word of line) {
         if (word.length > longestLength) {
           longestLength = word.length;
