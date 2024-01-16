@@ -1,12 +1,12 @@
 // Find an intersection of two dictionaries
 'use strict';
 const intersection = (object1, object2) => {
+  let commonElements = {};
   let firstKeys = Object.keys(object1);
   for (let attributeName of firstKeys) {
-    if (object1[attributeName] === object2[attributeName]) object2[attributeName] = object1[attributeName]; 
-    else delete object1[attributeName]; 
+    if (object1[attributeName] === object2[attributeName]) commonElements[attributeName] = object1[attributeName]; 
   }
-  return object1;
+  return commonElements;
 };
 
 module.exports = intersection;
